@@ -28,7 +28,7 @@ The 5 day weather forecast is computed, first, by retrieving the second item of 
 
 The hour is retrieved from the first element of the 40 element array.  This is the hour closest to the current time of day.  It is probably not exact, but this is the best we can do.  That hour is then used to obtain the next day's forecast.  A search for that hour retrieved is done against the rest of the elements. An equality search is performed, for each succeeding day (except the last). This approximates the next day's forecast, at approximately the same time the user clicked the search button.  It then retrieves information for the next four days, following the algorithm--except for the last day.  The 5th day's forecast is retrieved simply by grabbing the last element's data.  This is a good approximation for a 5 day forecast. 
 
-
+List of technologies used: weather API, HTML, Bootstrap, Javascript
 
 
 Link to application:
