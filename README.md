@@ -2,7 +2,8 @@
 
 ## Screenshot:
 
-![Weather Viewer](https://github.com/MarioThompson0010/git2/blob/master/homework/06_Weather/Assets/ScreenshotWeather.PNG)
+![Weather Viewer](https://github.com/MarioThompson0010/06_Weather_Teller/blob/main/Assets/ScreenshotWeather.PNG)
+![Weather Viewer 2](https://github.com/MarioThompson0010/06_Weather_Teller/blob/main/Assets/ScreenshotWeather2.PNG)
 
 List of technologies: localStorage, CSS, HTML, Javascript, JQuery, and APIs.
 
@@ -32,4 +33,4 @@ The hour is retrieved from the first element of the 40 element array.  This is t
 
 Link to application:
 
-[Link to weather](https://mariothompson0010.github.io/git2/homework/06_Weather/)
+[Link to weather](https://mariothompson0010.github.io/06_Weather_Teller/)
