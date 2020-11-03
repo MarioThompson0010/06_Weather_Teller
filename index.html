@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+
+<body class="container-fluid">
+    <header class="d-flex justify-content-center bg-dark">
+        <h1 class="text-white">
+            Weather Dashboard
+        </h1>
+    </header>
+
+    <div class="row">
+        <div class="col col-md-3 col-lg-3 pr-1">
+            <div class="row">
+                <div class="col">
+                    <label>
+                        <h5>
+                            Search for a city:
+                        </h5>
+                    </label>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <form id="formCities">
+                        <input id="enterCity" style="max-width: 200px;">
+
+                        <button class="fas fa-search fa_with_bg searchButton" type="submit" id="fa_searchButton">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <!-- this is where the list of buttons goes -->
+                <div class="col" id="buttoncolumn">
+                </div>
+            </div>
+        </div>
+        <!-- right part of screen -->
+        <div class="col col-md-9 col-lg-9">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body">
+                            <!-- input city and search -->
+                            <h3 class="card-title">
+                                <!-- user inputs city name -->
+                                <span id="currentCity"></span>
+                                <span id="currentDatespan"></span>
+                                <span>
+                                    <!-- image of current weather condition -->
+                                    <img id="currentImage" src="">
+                                </span>
+                            </h3>
+                            <!-- degrees in Fahrenheit. The &#8457 give you the little circle with F -->
+                            <p class="card-text"><span>Temperature:&nbsp</span><span id="currtemp"> </span><span
+                                    style='font-size:15px;'>&nbsp&#8457;</span> </p>
+                            <p class="card-text"><span>Humidity:&nbsp</span><span id="currhumid"></span><span>%</span>
+                            </p>
+                            <p class="card-text"><span>Wind Speed:&nbsp</span><span
+                                    id="currspeed"></span><span>&nbspMPH</span></p>
+                            <p class="card-text"><span>UVIndex:&nbsp</span><span id="curruv"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>
+                        5-day Forecast:
+                    </h3>
+                </div>
+            </div>
+            <div class="row forecasted" id="rowForecaster">
+                <!-- default columns are put in here.  Will show defaults if no list of cities exists -->
+                <div class="col col-md-2 px-1">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body pl-0">
+                            <h4 id="forecast1date" class="card-title">Date</h4>
+                            <img id=forecast1img>
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-2 px-1">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body pl-0">
+                            <h4 id="forecast1date" class="card-title">Date</h4>
+                            <img id=forecast1img>
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-2 px-1">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body pl-0">
+                            <h4 id="forecast1date" class="card-title">Date</h4>
+                            <img id=forecast1img>
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-2 px-1">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body pl-0">
+                            <h4 id="forecast1date" class="card-title">Date</h4>
+                            <img id=forecast1img>
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-2 px-1">
+                    <div class="card text-white bg-primary">
+                        <div class="card-body pl-0">
+                            <h4 id="forecast1date" class="card-title">Date</h4>
+                            <img id=forecast1img>
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Humidity: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
